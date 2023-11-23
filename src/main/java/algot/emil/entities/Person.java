@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public abstract class Person extends BaseEntity {
 
 	private String firstName;
-	private String LastName;
+	private String lastName;
 
 	@OneToOne
 	private User user;
@@ -21,10 +21,10 @@ public abstract class Person extends BaseEntity {
 	}
 
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		lastName = lastName;
 	}
 }
