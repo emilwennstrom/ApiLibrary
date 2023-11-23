@@ -3,3 +3,14 @@ Generell struktur för att installera paket till maven
 
 mvn clean package
 mvn install:install-file -Dfile='target/ApiLibrary-1.0.jar' -DgroupId='algot.emil' -DartifactId='ApiLibrary' -Dversion='1.0' -Dpackaging=jar
+
+
+Dependency i pom.xml om jar fil
+
+<dependency>
+			<groupId>algot.emil</groupId>
+			<artifactId>ApiLibrary-1.0.jar</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/libs/ApiLibrary-1.0.jar</systemPath>
+		</dependency>
