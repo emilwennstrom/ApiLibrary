@@ -25,4 +25,8 @@
 		<systemPath>${project.basedir}/libs/ApiLibrary-1.0.jar</systemPath>
 	</dependency>
 
+	Man behöver också lägga in:
+	@EntityScan(basePackages = "algot.emil.entities")
+	ovanför Application - den som startar applikationen.
+
 </commands>
