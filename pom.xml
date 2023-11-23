@@ -14,6 +14,13 @@
     <artifactId>ApiLibrary</artifactId>
     <version>1.0</version>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source> <!-- Adjust the Java version -->
         <maven.compiler.target>17</maven.compiler.target>
