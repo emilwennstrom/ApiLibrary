@@ -1,5 +1,5 @@
 
-<>
+<commands>
 
 	Generell struktur för att installera paket till maven
 
@@ -25,4 +25,4 @@
 		<systemPath>${project.basedir}/libs/ApiLibrary-1.0.jar</systemPath>
 	</dependency>
 
-</>
+</commands>
