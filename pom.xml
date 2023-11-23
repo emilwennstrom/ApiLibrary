@@ -13,7 +13,7 @@
     <groupId>algot.emil</groupId>
     <artifactId>ApiLibrary</artifactId>
     <version>1.0</version>
-
+    <!-- THIS IS A COMMENT -->
     <repositories>
         <repository>
             <id>jitpack.io</id>
