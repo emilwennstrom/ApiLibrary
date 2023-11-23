@@ -1,15 +1,15 @@
 package algot.emil.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 
 @Entity
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class Person extends BaseEntity {
 
 	private String firstName;
 	private String LastName;
 
-	@OneToOne(mappedBy = "person")
+	@OneToOne
 	private User user;
 
 	public String getFirstName() {

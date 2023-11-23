@@ -6,7 +6,6 @@ import jakarta.persistence.Table;
 
 import java.time.LocalDate;
 
-@Table
 @Entity
 public class Message extends BaseEntity {
 

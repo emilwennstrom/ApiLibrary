@@ -1,10 +1,7 @@
 package algot.emil.entities;
 
 import algot.emil.enums.UserPrivilege;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 
 import java.util.List;
 
@@ -13,8 +10,8 @@ import java.util.List;
  */
 
 @Entity
+@Table(name = "app_user")
 public class User extends BaseEntity {
-
 
 	@Column
 	private UserPrivilege privilege;
@@ -22,7 +19,7 @@ public class User extends BaseEntity {
 	private String email;
 	private String password;
 
-	@OneToOne(mappedBy = "user")
+	@OneToOne
 	private Person person;
 
 	//@OneToMany
