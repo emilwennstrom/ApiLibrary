@@ -1,0 +1,4 @@
+
+Generell struktur för att installera paket till maven
+
+mvn install:install-file -Dfile='target/ApiLibrary-1.0.jar' -DgroupId='algot.emil' -DartifactId='ApiLibrary' -Dversion='1.0' -Dpackaging=jar

@@ -10,7 +10,7 @@
         <version>3.1.5</version>
     </parent>
 
-    <groupId>emil.algot</groupId>
+    <groupId>algot.emil</groupId>
     <artifactId>ApiLibrary</artifactId>
     <version>1.0</version>
 
