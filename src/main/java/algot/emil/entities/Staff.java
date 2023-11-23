@@ -6,7 +6,7 @@ import java.util.List;
 
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-public class Staff extends NamedEntity {
+public class Staff extends Person {
 
 	@OneToMany(mappedBy = "writtenBy", fetch = FetchType.LAZY)
 	private List<Note> notes;

@@ -11,7 +11,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @Entity
-public class Patient extends NamedEntity {
+public class Patient extends Person {
 
 	private Sex sex;
 	private LocalDate birthdate;

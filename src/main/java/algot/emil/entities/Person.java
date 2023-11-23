@@ -1,13 +1,16 @@
 package algot.emil.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToOne;
 
-import jakarta.persistence.MappedSuperclass;
-
-@MappedSuperclass
-public abstract class NamedEntity extends BaseEntity {
+@Entity
+public abstract class Person extends BaseEntity {
 
 	private String firstName;
 	private String LastName;
+
+	@OneToOne(mappedBy = "person")
+	private User user;
 
 	public String getFirstName() {
 		return firstName;
