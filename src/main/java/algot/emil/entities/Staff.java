@@ -5,7 +5,6 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Staff extends Person {
 
 	@OneToMany(mappedBy = "writtenBy", fetch = FetchType.LAZY)

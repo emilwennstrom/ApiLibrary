@@ -2,7 +2,6 @@ package algot.emil.entities;
 
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 
 import java.time.LocalDate;
 

@@ -3,8 +3,6 @@ package algot.emil.entities;
 import algot.emil.enums.UserPrivilege;
 import jakarta.persistence.*;
 
-import java.util.List;
-
 /**
  * Note: This class must be called AppUser instead of App because of name clash. Program will not compile otherwise
  */

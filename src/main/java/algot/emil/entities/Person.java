@@ -25,6 +25,6 @@ public abstract class Person extends BaseEntity {
 	}
 
 	public void setLastName(String lastName) {
-		lastName = lastName;
+		this.lastName = lastName;
 	}
 }
