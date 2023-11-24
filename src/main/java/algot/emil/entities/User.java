@@ -36,6 +36,14 @@ public class User extends BaseEntity {
 		return privilege;
 	}
 
+	public Person getPerson(){
+		return person;
+	}
+
+	public void setPerson(Person person) {
+		this.person = person;
+	}
+
 	public String getEmail() {
 		return email;
 	}
