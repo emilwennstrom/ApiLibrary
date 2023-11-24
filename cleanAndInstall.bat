@@ -1,3 +1,5 @@
+REM placera i JournalApplication huvudmapp och kör filen i terminalen. alternativt kopiera allt  och kör i terminalen.
+
 @echo off
 cd ApiLibrary
 mvn clean package
