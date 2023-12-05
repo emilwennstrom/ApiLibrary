@@ -1,5 +1,6 @@
 package algot.emil.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -11,6 +12,7 @@ import java.util.List;
 public class Doctor extends Staff {
 
 	@OneToMany(mappedBy = "doctor", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	@JsonIgnore
 	private List<Encounter> encounters;
 
 	public List<Encounter> getEncounters() {

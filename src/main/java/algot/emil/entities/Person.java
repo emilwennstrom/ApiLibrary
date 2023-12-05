@@ -12,7 +12,7 @@ public abstract class Person extends BaseEntity {
 	private String lastName;
 
 	@OneToOne
-	@JsonIgnoreProperties("person")
+	@JsonIgnore
 	private User user;
 
 	public User getUser(){

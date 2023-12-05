@@ -1,6 +1,7 @@
 package algot.emil.entities;
 
 import algot.emil.enums.UserPrivilege;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
@@ -19,7 +20,7 @@ public class User extends BaseEntity {
 	private String password;
 
 	@OneToOne
-	@JsonIgnoreProperties("user")
+	@JsonIgnore
 	private Person person;
 
 	//@OneToMany
