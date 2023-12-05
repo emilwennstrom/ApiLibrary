@@ -1,5 +1,7 @@
 package algot.emil.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 @Entity
@@ -10,6 +12,7 @@ public abstract class Person extends BaseEntity {
 	private String lastName;
 
 	@OneToOne
+	@JsonIgnoreProperties("person")
 	private User user;
 
 	public User getUser(){
