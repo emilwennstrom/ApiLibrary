@@ -9,10 +9,13 @@ import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.OneToMany;
+import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
+
 import java.time.LocalDate;
 import java.util.List;
 
 @Entity
+@Indexed
 public class Patient extends Person {
 
 	private Sex sex;
