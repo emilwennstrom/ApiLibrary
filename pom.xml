@@ -4,21 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-
-    <dependencyManagement>
-        <dependencies>
-            <!-- Import Hibernate Search BOM to get all of its artifact versions aligned: -->
-            <dependency>
-                <groupId>org.hibernate.search</groupId>
-                <artifactId>hibernate-search-bom</artifactId>
-                <version>7.0.0.Final</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- Any other dependency management entries -->
-        </dependencies>
-    </dependencyManagement>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -45,22 +30,6 @@
     </properties>
 
     <dependencies>
-
-        <dependency>
-            <groupId>org.hibernate.search</groupId>
-            <artifactId>hibernate-search-mapper-orm</artifactId>
-            <!-- The version is managed by the BOM above -->
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate.search</groupId>
-            <artifactId>hibernate-search-backend-elasticsearch</artifactId>
-            <!-- The version is managed by the BOM above -->
-        </dependency>
-
-
-
-
-
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
@@ -72,15 +41,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>2.2</version>
-        </dependency>
-
-
-
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
