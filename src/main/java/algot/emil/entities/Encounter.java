@@ -5,6 +5,8 @@ import algot.emil.enums.EncounterPriority;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 
+import java.util.Date;
+
 
 @Entity
 public class Encounter extends BaseEntity {
@@ -19,6 +21,16 @@ public class Encounter extends BaseEntity {
 
 	@ManyToOne
 	private Patient patient;
+
+	private Date date;
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
 
 	public Doctor getDoctor() {
 		return doctor;
