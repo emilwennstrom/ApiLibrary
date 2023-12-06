@@ -3,11 +3,8 @@ package algot.emil.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
-import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
-import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
 
 @Entity
-@Indexed
 public class Condition extends BaseEntity {
 
 	private String bodySite;
@@ -15,8 +12,6 @@ public class Condition extends BaseEntity {
 	private String verificationStatus;
 	private String category;
 	private String severity;
-
-	@FullTextField //makes it so you can search for Conditions with "code" as input
 	private String code;
 	private String evidence;
 
